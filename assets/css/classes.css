@@ -5,6 +5,13 @@
     color: var(--white-color);
 }
 
+.contact-bg {
+    background-image: url(../img/Main-BG.jpg);;
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
 .gray-bg {
     background: var(--gray-color);
     color: var(--primary-color);
@@ -18,4 +25,9 @@
 
 .section {
     min-height: 100vh;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
 }

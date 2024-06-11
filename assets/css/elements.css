@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -53,4 +54,36 @@ a {
 
 p {
     margin-bottom: 2rem;
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+table {
+    min-width: 3.6rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+table td, table th {
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--lightgray-color);
+    background: rgb(226, 226, 226, 0.1);
+    color: var(--white-color);
+}
+
+thead th {
+    background: var(--ligth-yellow);
+    color: var(--primary-color);
 }
