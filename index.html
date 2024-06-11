@@ -10,21 +10,97 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/elements.css">
+    <link rel="stylesheet" href="assets/css/classes.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <section class="main-bg section">
-        <div class="main-content">
-            <h1> Lorem </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ipsa eos, saepe quibusdam officia possimus cum ex eligendi dicta voluptate iste? Minus dicta id eum nesciunt ipsa. Nemo, magnam ipsa!</p>
+    <aside class="Nav-Menu gray-bg">
+        <section class="main-content menu-content">
+            <div class="Logo-Menu">
+                <a href="http:///nivaldosouza.com.br">
+                    <img src="assets/img/Logo.svg" alt="Logotipo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#top3">Top3</a></li>
+                    <li><a href="#galery">Galery</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </aside>
+    <section id="home" class="main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-content-text">
+                <h2> HOW IT WORKS THE FAMOUS JAVASCRIPT? </h2>
+                <p>JavaScript is a programming language primarily used for web development, enabling the creation of interactive pages. It operates on both the client and server sides, essential for adding dynamism, form validation, and DOM manipulation.</p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/javascript.svg" alt="Imagem-Javascript">
+            </div>
+            
         </div>
     </section>
-
-    <section class="white-bg section">
-        <div class="main-content">
-            <h1> Lorem </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ipsa eos, saepe quibusdam officia possimus cum ex eligendi dicta voluptate iste? Minus dicta id eum nesciunt ipsa. Nemo, magnam ipsa!</p>
+    <section id="resume" class="gray-bg section">
+        <div class="main-content resume-content">
+            <h2> RESUME </h2>
+            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine’s performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.</p><br>
+            <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p><br>
+            <p>We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur, and discuss various updater problems we had to deal with. We’ll conclude with the release and an overview of various other improvements that are in the pipeline.</p>
+    </section>
+    <section id="top3" class="main-bg section">
+        <div class="main-content grid-content">
+            <h2 class="grid-main-heading">TOP 3 PRINCIPLES</h2>
+            <p class="grid-main-description">JavaScript is a versatile and widely used programming language for web development. Its three main principles are prototyping, event-driven programming, and asynchronous handling. Below is a summary of each of these principles:</p>
+            <div class="grid">
+                <article>
+                    <h3>PROTOTYPING</h3>
+                    <p>JavaScript uses a prototype-based inheritance system instead of classes, like other object-oriented programming languages. This means that objects can inherit properties and methods directly from other objects.</p>
+                </article>
+                <article>
+                    <h3>EVENT-DRIVEN</h3>
+                    <p>JavaScript is particularly effective for building user interfaces and interactive web applications due to its ability to respond to events. Events are actions or occurrences that happen in the browser</p>
+                </article>
+                <article>
+                    <h3>ASYNCHRONOUS</h3>
+                    <p>JavaScript supports asynchronous operations, allowing code to execute without blocking other operations, which is crucial for building efficient and responsive web applications.</p>
+                </article>
+            </div>
         </div>
     </section>
+    <section id="galery" class="gray-bg section">
+        <div class="main-content grid-content">
+            <h2 class="grid-main-heading">GALERY</h2>
+            <p class="grid-main-description">JavaScript is an essential programming language for web development, enabling the creation of interactive and dynamic pages. Its versatility and power allow for everything from simple animations to complex web applications. In this photo gallery section, you will find inspiring visual examples that showcase the breadth and creativity that JavaScript can offer. Explore the images to see how this language transforms ideas into vibrant digital realities.</p>
+            <div class="grid">
+                <div class="galery-img">
+                    <img src="/assets/img/Galery1.png" alt="">
+                </div>
+                <div class="galery-img">
+                    <img src="/assets/img/Galery2.jpg" alt="">
+                </div>
+                <div class="galery-img">
+                    <img src="/assets/img/Galery3.jpg" alt="">
+                </div>
+                <div class="galery-img">
+                    <img src="/assets/img/Galery4.jpg" alt="">
+                </div>
+                <div class="galery-img">
+                    <img src="/assets/img/Galery5.jpg" alt="">
+                </div>
+                <div class="galery-img">
+                    <img src="/assets/img/Galery6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
 </body>
 </html>
