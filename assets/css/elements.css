@@ -84,6 +84,6 @@ table td, table th {
 }
 
 thead th {
-    background: var(--ligth-yellow);
+    background: #d8a88b;
     color: var(--primary-color);
 }

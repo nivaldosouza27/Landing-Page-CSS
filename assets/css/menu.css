@@ -5,7 +5,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.2); /* Fundo branco com 50% de opacidade */
+    background: rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-weight: bold;
     z-index: 1000;
