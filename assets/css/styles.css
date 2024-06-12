@@ -136,21 +136,17 @@
 }
 
 .form-group button {
-    border: 0.5rem solid;
-    border-radius: 3px;
-    background: none;
-    color: var(--white-color);
+    border: none;
+    background: var(--lightgray-color);
+    color: var(--primary-color);
     padding: 1.5rem 2rem;
     font-size: 3rem;
     cursor: pointer;
     transition: all 300ms ease-in-out;
     }
     
-.form-group button:hover {
-    border: 0.5rem solid #d8a88b;
-    border-radius: 3px;
+.form-group button:hover, .form-group button:focus {
     background: #d8a88b;
-    color: var(--primary-color);
 }
 
 .form-group ::placeholder {
@@ -192,6 +188,17 @@
     margin: 1rem;
 }
 
+.icon-img img:hover, .icon-img img:focus {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.close-menu {
+    display: none;
+}
+
 
 @media (max-width: 800px) {
     .intro-content, .grid {
@@ -220,9 +227,75 @@
 
     .Nav-Menu {
         bottom: 0;
+        background: rgb(216, 168, 139, 0.95);
     }
 
-    body {
-        background: var(--primary-color);
+    .Nav-Menu ul li a{
+      color: var(--primary-color);
     }
+
+    .menu-content, .menu-content ul{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .menu-content li {
+        margin: 1rem;
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .menu-content li:hover {
+        background: #bd825d;
+    }
+
+    .menu-content ul li a:hover {
+        color: var(--white-color);
+    }
+
+    .menu-content{
+        height: 100vh;
+    }
+
+    .Logo-Menu{
+        margin-top: 5rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .Nav-Menu {
+        display: none;
+    }
+   
+    .close-menu-label::after {
+        content: '☰';
+        display: flex;
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        left: 2rem;
+        background: none;
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: 3rem;
+        padding: 0.5rem;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .close-menu:checked~.Nav-Menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: '✕';
+    }
+
 }
